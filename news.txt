@@ -1,0 +1,5 @@
+(channel-news
+ (version 0)
+ (entry (commit "2848e456a788aaf47fbed7f6201251b289d75d05")
+         (title (en "Added authorization"))
+         (body (en "This is empty channel now!"))))
