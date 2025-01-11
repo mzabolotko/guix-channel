@@ -52,3 +52,25 @@ GUI and terminal, and requires a nerd font installed on your system.")
     (synopsis "nerd-icons theme for dired")
     (description "nerd-icons theme for dired")
     (license license:gpl3))))
+
+(define-public emacs-nerd-icons-corfu
+  (let ((commit "41110180ceab9d0edaa856d19633b2b3fdf82e75"))
+  (package
+     (name "emacs-nerd-icons-corfu")
+     (version "0.0.1")
+     (source
+     (origin
+       (method git-fetch)
+       (uri (git-reference
+             (url "https://github.com/LuigiPiucco/nerd-icons-corfu")
+             (commit commit)))
+       (file-name (git-file-name name version))
+       (sha256
+         (base32 "0mwng5khhq6iqmr0ip8fv227cnkv0mv5664qz57r7sbjplqyabgf"))))
+     (propagated-inputs
+      (list emacs-nerd-icons))
+     (build-system emacs-build-system)
+     (home-page "https://github.com/LuigiPiucco/nerd-icons-corfu")
+     (synopsis "Icons for corfu via nerd-icons ")
+     (description "nerd-icons-corfu.el - Icons for Corfu via nerd-icons")
+     (license license:gpl3))))
