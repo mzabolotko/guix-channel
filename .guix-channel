@@ -6,7 +6,7 @@
   (url "https://github.com/mzabolotko/guix-channel")
   (dependencies
     (channel
-      (name 'guix)
+      (name guix)
       (url "https://git.savannah.gnu.org/git/guix.git")
       (branch "master")
       (introduction
