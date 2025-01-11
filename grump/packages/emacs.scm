@@ -1,4 +1,4 @@
-(define-module (mz-channel packages mz-emacs-nerd-icons-completion)
+(define-module (grump packages emacs)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system emacs)
@@ -8,10 +8,10 @@
   #:use-module (gnu packages emacs)
   #:use-module (gnu packages emacs-xyz))
 
-(define-public mz-emacs-nerd-icons-completion
+(define-public emacs-nerd-icons-completion
   (let ((commit "8e5b995eb2439850ab21ba6062d9e6942c82ab9c"))
   (package
-    (name "mz-emacs-nerd-icons-completion")
+    (name "emacs-nerd-icons-completion")
     (home-page "https://github.com/rainstormstudio/nerd-icons-completion")
     (version "0.0.1")
     (source
