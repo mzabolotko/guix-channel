@@ -29,5 +29,3 @@
     (description "Nerd-icons an alternative to all-the-icons.  It works on both
 GUI and terminal, and requires a nerd font installed on your system.")
     (license gpl3+))))
-
-mz-emacs-nerd-icons-completion
