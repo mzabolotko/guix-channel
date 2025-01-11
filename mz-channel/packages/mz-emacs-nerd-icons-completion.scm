@@ -1,4 +1,4 @@
-(define-module (mz-emacs-nerd-icons-completion)
+(define-module (mz-channel packages mz-emacs-nerd-icons-completion)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system emacs)

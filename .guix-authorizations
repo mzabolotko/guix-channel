@@ -1,8 +1,6 @@
-;; This is the list of OpenGPG keys currently authorized to sign commits in
-;; this repository.
+;; -*- mode: scheme; -*-
 
 (authorizations
   (version 0)
-
   (("1B7E 1A8F 551F BBB8 7E83  A040 C9F6 5395 68C2 EB28"
     (name "Mikhail Zabolotko"))))
