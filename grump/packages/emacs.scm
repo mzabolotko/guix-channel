@@ -89,10 +89,26 @@ GUI and terminal, and requires a nerd font installed on your system.")
                 (sha256
                  (base32 "1l51v2di8hgm2n8fb8kj5q6ns501vfkv5706v1q0fa8amvmralgb"))))
       (build-system emacs-build-system)
-      (propagated-inputs (list emacs-lsp-mode emacs-haskell-mode))
+      (propagated-inputs (list mz-emacs-lsp-mode emacs-haskell-mode))
       (home-page "https://github.com/emacs-lsp/lsp-haskell.git")
       (synopsis "lsp-mode heart haskell")
       (description
        "An Emacs Lisp library for interacting with a Haskell language server
 such as haskell-language-server using Microsoft's Language Server Protocol.")
       (license license:gpl3+))))
+
+(define emacs-lsp-mode-9.0.1
+  (let ((commit "5d964348d35ff7eaddb7e9712c82d0f14d49a7e5"))
+    (package
+     (inherit emacs-lsp-mode)
+     (version "9.0.1")
+     (name "mz-emacs-lsp-mode")
+     (source
+      (origin
+      (method git-fetch)
+      (uri (git-reference
+        (url "https://github.com/emacs-lsp/lsp-mode")
+        (commit commit)))
+      (file-name (git-file-name name version))
+      (sha256
+       (base32 "0ppijcxs1vgfh73g5lapp4bf07izjmpw2yg5payckg7k2zgy7zrv")))))))
