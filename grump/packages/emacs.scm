@@ -97,7 +97,7 @@ GUI and terminal, and requires a nerd font installed on your system.")
 such as haskell-language-server using Microsoft's Language Server Protocol.")
       (license license:gpl3+))))
 
-(define emacs-lsp-mode-9.0.1
+(define-public emacs-lsp-mode-9.0.1
   (let ((commit "5d964348d35ff7eaddb7e9712c82d0f14d49a7e5"))
     (package
      (inherit emacs-lsp-mode)
