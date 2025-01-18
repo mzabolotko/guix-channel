@@ -89,7 +89,7 @@ GUI and terminal, and requires a nerd font installed on your system.")
                 (sha256
                  (base32 "1l51v2di8hgm2n8fb8kj5q6ns501vfkv5706v1q0fa8amvmralgb"))))
       (build-system emacs-build-system)
-      (propagated-inputs (list mz-emacs-lsp-mode emacs-haskell-mode))
+      (propagated-inputs (list emacs-lsp-mode-9.0.1 emacs-haskell-mode))
       (home-page "https://github.com/emacs-lsp/lsp-haskell.git")
       (synopsis "lsp-mode heart haskell")
       (description
