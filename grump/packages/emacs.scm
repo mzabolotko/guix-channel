@@ -74,3 +74,25 @@ GUI and terminal, and requires a nerd font installed on your system.")
      (synopsis "Icons for corfu via nerd-icons ")
      (description "nerd-icons-corfu.el - Icons for Corfu via nerd-icons")
      (license license:gpl3))))
+
+(define-public emacs-lsp-haskell
+  (let ((commit "6981f8d1225c038c1a130e8cf70530cfe15f976e"))
+    (package
+      (name "emacs-lsp-haskell")
+      (version "1.1")
+      (source (origin
+                (method git-fetch)
+                (uri (git-reference
+                      (url "https://github.com/emacs-lsp/lsp-haskell.git")
+                      (commit commit)))
+                (file-name (git-file-name name version))
+                (sha256
+                 (base32 "1l51v2di8hgm2n8fb8kj5q6ns501vfkv5706v1q0fa8amvmralgb"))))
+      (build-system emacs-build-system)
+      (propagated-inputs (list emacs-lsp-mode emacs-haskell-mode))
+      (home-page "https://github.com/emacs-lsp/lsp-haskell.git")
+      (synopsis "lsp-mode heart haskell")
+      (description
+       "An Emacs Lisp library for interacting with a Haskell language server
+such as haskell-language-server using Microsoft's Language Server Protocol.")
+      (license license:gpl3+))))
