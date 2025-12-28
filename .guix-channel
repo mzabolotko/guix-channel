@@ -5,15 +5,15 @@
   (news-file "news.txt")
   (url "https://github.com/mzabolotko/guix-channel")
   (dependencies
-    (channel
-      (name guix)
-      (url "https://git.savannah.gnu.org/git/guix.git")
-      (branch "master")
-      (introduction
-        (channel-introduction
-	  (version 0)
-	  (commit "40b9f330662cdccfa3d279aecc2f447d39f858d4")
-	  (signer "BBB0 2DDF 2CEA F6A8 0D1D  E643 A2A0 6DF2 A33A 54FA"))))
+    ;; (channel
+    ;;   (name guix)
+    ;;   (url "https://git.savannah.gnu.org/git/guix.git")
+    ;;   (branch "master")
+    ;;   (introduction
+    ;;     (channel-introduction
+    ;; 	  (version 0)
+    ;; 	  (commit "40b9f330662cdccfa3d279aecc2f447d39f858d4")
+    ;; 	  (signer "BBB0 2DDF 2CEA F6A8 0D1D  E643 A2A0 6DF2 A33A 54FA"))))
     (channel
       (name nonguix)
       (url "https://gitlab.com/nonguix/nonguix")
